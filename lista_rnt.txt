@@ -1,0 +1,316 @@
+RNT-000	Gestor de Admnistración y Seguridad del RNT:
+Módulo administrador, se encarga de las funciones de ingreso y salida al sistema, definición de tipos de usuarios, usuarios, perfiles, permisos, gestión de todos los catálogos del Sistema RNT entre otras funciones relacionadas a la gestión de administración de un Sistema de Información empresarial.
+El módulo administrador del RNT debe asegurar el control de acceso de los usuarios al Sistema RNT y el control del acceso a información por parte de los usuarios. Se debe evitar el acceso por parte de los usuarios a informació no autorizada dentro del Sistema RNT.
+RNT-001	Motor Gestor de trámites del RNT:
+Motor gestor de trámites, solicitudes y procesos. Realiza las funciones de creación, edición, modificación, visualización y otras relacionadas a la gestión de procesos del RNT. Lleva la bitácora de los procesos, se encarga de la gestión documental, de la gestión de notificaciones, gestiona los estados de los procesos y es en esencia el marco de aplicación base para la implementación de procesos, solicitudes y trámites del RNT. 
+El Motor Gestor de Trámites del RNT, deberá ser una plataforma flexible, tal que se permita a la SUTEL, el implementar nuevos procesos, trámites y solicitudes no incluídos en el alcance del proyecto RNT.
+RNT-002	Componente de Pago en Línea:
+Implementación de un mecanismo de pago en línea con interfaces desde y hacia un banco que será designado por el equipo de la SUTEL. No incluye implementación de pagos por el sistema SINPE del BCCR.
+RNT-003	Componente de Firma Digital:
+Implementación del estampado de firma digital avanzada en los formularios electrónicos y en los documentos electrónicos manipulados por el Sistema RNT. Incluye subrutinas de lectura de “drivers”, manejador del dispositivo “lector”, y todo lo necesario para leer, reconocer, manipular y estampar los certificados digitales en los documentos y formularios electrónicos. No incluye la implementación de la autenticación del Sistema RNT con Certificados Digitales.
+RNT-004	Interoperabilidad con Sistemas Internos de la SUTEL:
+Se refiere a las interfaces tanto a nivel del intercambio de mensajes y datos, como a nivel del intercambio de llamados entre servicios del Sistema RNT y los Sistemas Internos actualmente operados por la SUTEL. El alcance del requerimiento abarca el diseño e implementación de servicios e interfaces de consumo y producción de servicios, tanto a nivel del Sistema RNT, como a nivel de todos los Sistemas Internos del  SUTEL, que sean pertinentes al proyecto RNT.
+
+Dichas interfaces incluyen (sin limitarse a) la siguiente lista de Sistemas Internos de la SUTEL:
+1.	Sistema Nacional de Gestión y Monitoreao de Espectro
+2.	Sistema de Gestión de Servicios y Proveedores
+3.	Sistema de Gestión de Homologación
+4.	Sistema Argus (medidores de espectro y calidad)
+5.	Sistema “Drive Test” (medidores de espectro y calidad)
+6.	Sistema de Tarifas
+7.	Sistema de Congtratos de Adhesión e Interconexión
+8.	Sistema de privacidad telefónica (STP)
+9.	Sistema “Speed Test”
+10.	Sistema de Registro Prepago
+11.	Sistema de Reporte de Interrupciones (SARAI)
+12.	Sistema SITEL (indicadores)
+13.	Sistema FONATEL (indicadores)
+14.	Sistemas Financieros de Indicadores
+15.	Sistema de Seguimiento de Actas, Acuerdos y Asuntos
+16.	Sistema Integrado de Administración (ERP),
+17.	Plataforma de Información Geográfica
+18.	Sistema Gestor Documental (Laserfiche)
+19.	Sistema Felino
+20.	Sistema Gestor Documental del MICIT (Drupal)
+21.	Sistemas de la ARESEP
+RNT-005	Interoperabilidad con Sistemas externos a la SUTEL:
+Se refiere a las interfaces tanto a nivel del intercambio de mensajes y datos, como a nivel del intercambio de llamados entre servicios del Sistema RNT y los Sistemas Externos a la SUTEL. El alcance del requerimiento abarca el diseño e implementación de servicios e interfaces de producción y consumo de servicios a nivel del Sistema RNT.
+
+Dichas interfaces incluyen (sin limitarse a) la siguiente lista de Sistemas Externos a la SUTEL:
+1.	Ministerio de Ciencia y Tecnología, MICIT
+2.	Registro Nacional
+3.	Imprenta Nacional (Gaceta)
+4.	Tribunal Supremo de Elecciones
+5.	Dirección General de Migración y Extranjería
+RNT-006	Análisis (parseo) del mensajes del Registro Nacional:
+El mensaje de texto proveniente del consumo de las consultas de mediante las interfaces (ej. Web Services) del Registro de Empresas (Registro Nacional), deben poder ser analizadas (parseadas) para extraer del téxto los datos, para posteriormente compararlas con los datos de las casillas digitadas por los usuarios del Sistema RNT, sin intervención humana de. 
+
+Los datos que deben ser extraídos de dichos mensajes incluyen (sin limitarse a):
+a.	Números de cédula física
+b.	Números de cédula jurídica
+c.	Nombres de Personería Jurídica
+d.	Nombre de Representantes legales
+e.	Fechas (las que resulten relevantes) 
+RNT-007	Portal de Acceso a Regulados
+RNT-008	Generación de Certificaciones del RNT:
+Se refiere a todas las certificaciones que sea pertinente emitir a partir no solo del “Core Registral” del RNT sino de todos sus demas componentes.
+RNT-009	Integración al Gestor Documental (Laserfiche):
+Se refiere a todas las interfaces a nivel de API (Application Program Interface por sus términos en inglés), que sea necesario desarrollar para el intercambio de datos, mensajes y llamados entre el Sistema RNT y el Gestor Documental Laserfiche de la SUTEL. El Gestor Documental (Laserfiche) cuenta con acceso a nivel de APIs y SDKs (Software Development Kits por sus términos en inglees), para acceder sus funciones y servicios. 
+
+Se parte de la premisa de que el equipo de proyecto del SUTEL no cuenta con el conocimiento para manipular dichas interfaces. Por tanto, el oferente deberá investigar y analizar la documentación de los “APIs” y el “SDK” del “Laserfiche” por su cuenta.
+
+RNT-010	Expediente Digital:
+Se refiere a la funcionalidad de que todo proceso, solicitud, petición o trámite, que produzca nuevos datos, documentos, mensajes; debe depositar la documentación pertinente en el gestor documental (laserfiche), siguiendo los requerimientos y parámetros que sean definidos por las políticas y procedimientos de gestión documental de la SUTEL.
+RNT-011	Gestión de Datos confidenciales:
+Se refiere a la funcionalidad de que el usuario del Sistema, tenga la potestad de indicar los elementos del formulario que son confidenciales. El Sistema RNT ha de reconocer dichos ítems marcados como “confidenciales” y tomar las acciones que indiquen las políticas y procedimientos de manejo confidencialidad de datos de la SUTEL.
+RNT-012	Formularios dinámicos e inteligentes:
+El Sistema RNT proporcionará la implementación de formularios electrónicos que permitan reconocer, ocultar y desplegar casillas de información a media que éstas resulten pertinentes para cada proceso, trámite o solicitud del Sistema.
+Todo formulario electrónico del Sistema RNT, reducirá al mínimo la necesidad de capturar información digitada por el usuario, y favorecerá la selección de datos a partir de catálogos del sistema mediante la presentación de: Listas de Valores, Ventanas de Selección, y cualquier tipo de elemento de formulario, que permita elegir y seleccionar, antes de digitar los datos de las casillas de información.
+Los formularios electrónicos deben permitir la validación de casillas de datos contra los catálogos o servicios pertinentes, en tiempo real. Como parte de la fase de “levantamiento y especificación de requerimientos”, el oferente deberá levantar los requerimientos de el o los formularios que correspondan para cada proceso, solicitud, trámite o petición gestionada por el Sistema RNT.
+RNT-013	Documentos adjuntos:
+Se refiere a la funcionalidad de permitir adjuntar múltiples documentos electrónicos a los formularios electrónicos. Los documentos adjuntos pasan a formar parte del Formulario Electrónico y todas las operaciones básicas pertinentes a los formularios electrónicos, abarcan dichos documentos adjuntos (Ej. El estampado de Firma Digital, el registro del formulario y sus adjuntos en el Expediente Digital, etc.).
+RNT-014	Trazabilidad:
+Se refiere a la capacidad de visualización y consulta de la trazabilidad de los estados de cada proceso, trámite, solicitud o petición gestionada dentro del Sitema RNT.
+RNT-015	Gestión de Notificaciones:
+Se refiere al módulo gestor de notificaciones. Debe permitir la generación de notificaciones de cada proceso del Sistema RNT siguiendo las políticas y regulaciones establecidas para el manejo de notificaciones por la SUTEL.
+Para todos los procesos, solicitudes y trámites, se desarrollará un flujo que permita a los usuarios, comunicar subsanaciones y observaciones mediante una única prevención. Como regla general, se permite una sola notificación por cada una de las instancias de los procesos y trámites del Sistema RNT.
+RNT-016	Portal público del Sistema RNT:
+Se refiere al portal de los ciudadanos para la interacción de consultas y otros servicios y trámites, del Sistema RNT.
+Se debe contemplar la siguiente lista de funcionalidades (sin limitarse a):
+a)	Acceso de los usuarios a solicitudes de inscripción
+b)	Acceso de los usuarios a solicitudes de certificación
+c)	Acceso de los usuarios a pagos en línea
+d)	Acceso de los usuarios a consultar el perfil
+e)	Acceso de los usuarios a solicitar certificaciones de la información inscrita en el “Core Registral” del Sistema RNT
+f)	Acceso de los usuarios a información histórica del “Core Registral” del Sistema RNT
+g)	Capacidad de poder descargar información hacia múltiples formatos habilitados (Ej. MS-Excel, ficheros planos .CSV ,etc)
+h)	Se debe permitir crear, editar, consultar, eliminar o inactivar una inscripción
+i)	Se debe permitir otorgar acceso al administrador y al usuario del Sistema a cada uno de los actos sujetos a inscripción por Nombre del Proveedor o Nombre del Concesionario
+j)	Se debe permitir la generación de certificaciones basados en la información inscrita en el Registro del RNT
+k)	La consulta de asientos del Registro del RNT, debe permitir ver la información actualizada, las modificaciones deberán constar por nota marginal en los asientos principales
+l)	Se debe permitir la generación por demanda de las certificaciones pagadas y porterior envío de dichas certificaciones por correo electrónico al usuario
+m)	Se deben emitir oficios y resoluciones con estampados de firma digital avanzada (certificados digitales)
+n)	Se deben permitir notas marginales en los asientos y sub-asientos
+o)	Los asientos y sub-asientos están relacionados
+	
+RNT-017	Gestión de Datos Abiertos (Open Data):
+Se refiere a la implementación de servicios de interfaces de datos mediante interfaces abiertas (https://es.wikipedia.org/wiki/Datos_abiertos) que resulten pertinentes para ofrecer las capacidades de consulta y gestión de los procesos, solicitudes, trámites y peticiones gestionadas dentro del Sistema RNT.
+RNT-018	Mantenimiento de Catálogos del Sistema RNT:
+Se refiere a generar las pantallas de mantenimiento de todas las listas de valores, tablas, modelos de datos y artefactos enumeradores que se requiera cotejar como parte de las reglas de validación de las casillas de información.
+Como regla general, si una casilla de información requiere reglas de validación o lista de valores que no se puedan producir por medio de interfaces con Sistemas Externo o interfaces con Sistemas Internos, requiere un catálogo de dicha lista de valores y el Sistema RNT proveerá el mantenimiento de dichos catálogos.
+Los Mantenimientos de Catálogos del Sistema RNT deberán ser definidos dentro del Gestor de Administración del RNT.
+
+RNT-019	Generador de Reportes:
+Se refiere a un módulo generador dinámico de reportes, tal que a partir de un selector de campos y un selector de filtros, el usuario pueda generar y “pivotear” reportes en formatos tabulares.
+
+El Generador de Reportes  debe permitir la descarga de la información en ficheros de formatos: MS-Excel y .CSV.
+
+El Generador de Reportes debe permitir compartir la información del reporte como una imagen PDF, por medio de envíos de dichas imágenes a correos electrónicos digitados por el usuario.
+
+El Generador de Reportes debe permitir la calendarización automática de generación y envíos de reportes a direcciones de correos electrónicos pre-especificados por los usuarios.
+
+El Generador de Reportes debe contemplar los siguientes componentes mínimos:
+a)	Mantenedor de Fuentes de Datos
+b)	Constructor de Reportes. Incluye: selección de datos desde la fuente de datos, agregar casillas (columnas), agrupación de casillas (columnas), ordenamiento de casillas (columnas).
+c)	Mantenedor de Reportes, permite eliminar reportes y modificar reportes.
+d)	Clasificador de Reportes. Permite el mantenimiento de categorías.
+
+RNT-020	Gestor de Reglas del Negocio para los Formularios:
+Se refiere a un motor (no confundir con el Motor de Reglas del Negocio de la Plataforma de Interoperabilidad – BRE) que permita parametrizar para cada casilla de cada formulario, los siguientes criterios:
+a)	Obligatoriedad de cada casilla
+b)	Opcionalidad de cada casilla
+c)	Restricción del tipo de dato de cada casilla
+d)	Validación de lista de valores de cada casilla
+e)	Validación de dominio de valores (Ej. Enumeradores)
+f)	Validación de mínimo y máximo
+g)	Validación de casillas basadas en combinaciones de valores de otrsas casillas
+h)	Validación en línea de ingresos vía interfaces de la Plataforma de Interoperabilidad (Ej. Inferfaces Web Services)
+i)	Validación de lotes para ingresos vía intercambio de mensajes provistos por medio de la Plataforma de Interoperabilidad
+RNT-021	Gestor documental (Drupal) para el MICIT:
+Se refiere a el aprovisionamiento y configuración de un gestor Documental para uso y aprovechamiento del MICIT, basado en tecnología Drupal de “Software Libre” (www.drupal.org). 
+La SUTEL cuenta con el Gestor Documental “Laserfiche” mientras que el MICIT contará con el Gestor basado en Drupal.
+Para efectos de cumplir con el requerimiento de Expediente Digital, todos los procesos acatarán las disposiciones en dicha materia por parte de la SUTEL y por parte del MICIT, para aquellos procesos que resulten pertinentes. En el caso de procesos relevantes al MICIT, el requerimiento de Expediente Electrónico del MICIT deberá ser implementado con el Gestor Documental basado en Drupal, acatando las políticas del MICIT en dicha materia.
+El aprovisionamiento y configuración del Drupal para el MICIT tendrá lugar en los entornos de pruebas y de producción, designados por el equipo de trabajo de la SUTEL.
+RNT-022	Gestión de Bitácora:
+Se refiere al diseño e implementación de un módulo único de Bitácora así como la consulta a la misma. 
+RNT-023	Amigabilidad de Interfaces de Usuario (UX-Design):
+Se refiere a una serie de requisitos mínimos los cuales encausan el diseño de las interacciones entre el Sistema RNT y los usuarios, aplicando prácticas de industria para guiar el diseño de forma amigable para el usuario.
+La lista de requisitos mínimos comprende (sin limitarse a):
+a)	Las páginas de la capa de presentación deben ser livianas, el tiempo de carga y despliegue completo no debe superar los 3 segundos.
+b)	Es permitido el uso de controles capa de presentación  por la flexibilidad y la productividad que se devenga de éstos, sin embargo es necesario evitar el uso de controles que resulten pesados (de cargar) para las páginas de la capa de presentación.
+c)	El uso de cualquier control de terceros debe ser aprobado por SUTEL. En caso de uso de controles de terceros el oferente debe proporcionar el licenciamiento sin costo adicional para SUTEL y realizar pruebas que demuestren que el control no va a tener un rendimiento bajo y que no compromete el rendimiento de todo el sistema.
+d)	Debe estandarizar la interacción con el usuario a través de la definición de, sin ser exhaustivo, los siguientes elementos:
+a. Controles estándar a utilizar y su uso recomendado.
+b. Modelo de navegación.
+c. Presentación de mensajes a los usuarios.
+d. Uso de ventanas pop-up para la selección de uno o más registros.
+e)	Debe guardar y recordar (memoria transaccional) la navegación y las últimas acciones del usuario, de manera que se evite perder el trabajo del usuario además de ofrecer acciones en el futuro como aceleradores de navegación y acción.
+f)	Deber ofrecer visibilidad del Estado del Sistema. Los usuarios deben poder saber siempre que está pasando con el Sistema dentro de rangos razonables de tiempo. (Ej. El sistema está procesando, el Sistema esta degradándose,etc)
+g)	Lenguaje Natural de comunicación con los usuarios. El Sistema debe “comunicarse” con los usuarios por medio de mensajes en lenguajes que el usuario pueda entender semánticamente, con palabras, frases y conceptos familiares para el usuario. Se debe evitar el uso de mensajes en lenguaje con términos orientados a sistemas. (Ej. Mensaje “Ejecutando interoperabilidad …” es inapropiado para el usuario). Se deben seguir convenciones del “mundo real” para tener un dialogo con el usuario que sea amigable y entendible
+h)	Control y libertad del usuario. En toda ocasión en que el usuario haya presionado una opción por error, se debe contar con una “salida de emergencia” para ofrecerle al usuario ,de manera que éste pueda salirse de ese estado no deseado sin necesidad de extender un diálogo innecesario entre el usuario y el Sistema RNT
+i)	Consistencia y estándares. Los usuarios no deben tener que “adivinar” si diferentes palabras ,situaciones o acciones significan lo mismo. Se recomienda seguir convenciones estandarizadas y consistentes en cuanto a los mensajes y significados de los mismos que el Sistema RNT intercambia con los usuarios
+j)	Prevención de Error: El diseño de Interfaces de Usuario debe contemplar la prevención de problemas. Se deben eliminar los escenarios que induzcan a errores potenciales, y favorecer la confirmación de dichos escenarios con el usuario antes de que las acciones sean comprometidas
+k)	Reconocimiento. Se debe minimizar la dependencia de la memoria del usuario para operar el Sistema. Se deben cargar de forma automática objetos, acciones y opciones y hacerla visibles al usuario para reducir el uso de su memoria. 
+l)	Flexibilidad y eficiencia de uso. Se debe analizar el uso de “aceleradores” para usuarios avanzados y opciones que distingan a usuarios novicios de aquellos avanzados.
+m)	Diseño estético y minimalista. Páginas, Menús, controles, mensajes y diálogos, deben conformar una línea visual consistente a través del Sistema RNT. Dichos elementos no deben contener información irrelevante o raramente requerida por los usuarios. Cada unidad adicional de información en una pantalla o diálogo, compite con las unidades de información relevantes y disminuye su visibilidad relativa. El uso de colores y diseños estéticos, debe ser en tonos enmudecidos, y se recomienda el uso de espacios y tipografías agrandadas, fáciles de leer.
+n)	Ayuda al usuario. Se debe contar con interfaces que ayuden al usuario a reconocer, diagnosticar y recuperarse de errores. Los errores deben ser expresados en lenguaje simple, sin uso de códigos, deben indicar el problema de forma precisa y constructivamente sugerir una solución
+o)	Ayuda en línea. Aún cuando es mejor si el Sistema RNT puede operarse sin el uso de documentación en línea, puede ser necesario proveer ayuda y documentación contextual, según la página, bloque de información y casilla donde esté el usuario. Dicha información debe ser fácil de buscar y encontrar, enfocada en la tarea del usuario y debe procurar listar pasos para que el usuario prosiga evitando confusiones.
+RNT-024	Gestor de liquidaciones de Pago:
+Se refiere a un módulo que sirva de centro de acopio de todos los importes recolectados por la SUTEL, de forma tal que sea posible calendarizar y generar reportes de pago de rubros por cada institución y por dada rubro, que permitan calcular la distribución y el detalle de importes a depositar a las distintas instituciones con las que SUTEL interactúa como parte de la gestión del Sistema RNT. La unidad financiero contable será el usuario mas habitual de dicho gestor de liquidaciones de pago, para la tramitación de los depósitos y los asientos correspondientes en el Sistema Contable pertinente. Los depósitos y los asientos contables no forman parte del alcance del Sistema RNT.
+RNT-025	Acceso al componente de pago de la GACETA (imprenta nacional):
+En el caso de la Imprenta Nacional, se ha definido la necesida de contar con un servicio e interfaces que accedan el servicio de pago de la GACETA directamente, para efectuar los pagos de importes del Sistema RNT. Esto porque la imprenta nacional requiere que la SUTEL no funga como su ente recaudador. El alcance del presente requerimiento abarca todo el cirtuito completo de interacción entre el Sistema SUTEL y el Sistema de Pago de la GACETA. Esto incluye la implementación de servicos en ambos entornos (SUTEL e Imprenta Nacional) para facultar las interacciones.
+RNT-026	Se requiere la emisión de un número consecutivo de asiento para el “Core Registral” del RNT. Se emitirá un número de citas o registro. Las modificacioens requieren un sub-asiento, es decir, un número consecutivo relacionado al número principal u original.
+RNT-027	Es requerido que el Sistema RNT pueda practicar anotaciones al margen de los asientos.
+RNT-028	Para el caso de la solicitud de emisión de certificaciones de registros inscritos en el Sistema RNT, se deberán solicitar y emitir digitalmente los mismos con el estampado de firma digital avanzada.
+RNT-029	El “Core Registral” del Sistema RNT debe garantizar la seguridad y autenticidad de la información que publique
+RNT-030	Relaciones entre Asientos del “Core Registral” del RNT. Los asientos exhiben relaciones entre ellos y el Sistema debe evidenciar y visualizar para facilidad de los usuarios, dichas relaciones.
+RNT-031	Generación automatizada de la Lista de Concesionarios.
+Se refiere a la capacidad del “Core Registral” del RNT, para identificar los Concesionarios a partir del cruce de un diccionario de términos con la base de datos de asientos del Registro del RNT.
+RNT-032	Gestor de RNT Móvil:
+Se refiere a una aplicación que permita consultar procesos, trámites, solicitudes mediante teléfonos móviles (ej. Celulares).
+RNT-033	Otorgamiento de Concesiones Directas (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-034	Otorgamiento de Concesiones por Concurso Público (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-035	Trámites de Extinción de Concesiones Directas (MICIT-SUTEL)
+Implementación del Proceso indicado. Incluye las variantes:
+a)	Por nulidad evidente y manifiesta
+b)	Por nulidad no evidente y no manifiesta
+c)	Por causal de extinción anticipada endilgable al concesionario
+RNT-036	Trámites de Adecuación de Concesiones Directas (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-037	Trámites de Adecuación de Concesiones por Concurso Público (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-038	Trámites de reasignación de Concesiones Directas (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-040	Trámites de reasignación de Concesiones por Concurso Público (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-041	Trámites de delimitación de frecuencias de Concesiones Directas (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-042	Trámites de delimitación de frecuencias de Concesiones por Concurso Público (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-043	Trámite de Permisos para Banda Ciudadana (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-044	Trámite de Permisos para Radio Comunicación Privada (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-045	Trámite de Permisos para Uso Oficial (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-046	Trámite de Permisos para Buques y Aeronaves (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-047	Trámite de Permisos para Satelitales (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-048	Trámite de Permisos para Temporales (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-049	Trámite de Permisos para Experimentales (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-050	Trámite de Permisos para Radioaficionados (MICIT-SUTEL)
+Implementación del Proceso indicado.
+Incluye las variantes del proceso para:
+a)	Concesión directa
+1. concesiones de enlaces móviles
+2. enlaces de radiodifusión 
+3. enalces satelitales
+b)	Concesión pública
+1. modificaciones
+RNT-060	Solicitud de Autorizaciones (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-061	Solicitud de Homologación de Acuerdos de Acceso e Interconexion (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-062	Solicitud de Homologación de Oferta de Interconexión por Referencia (OIR) (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-063	Ordenes de Acceso e Interconexión (Dir. Gral. Mercados SUTEL)
+RNT-064	Solicitud de Asignación de Recursos Numeración e inscripción de Registro de Numeración (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-065	Solicitud de Acreditación Arbitros y Peritos   (Dir. Gral. Calidad SUTEL)
+Implementación del Proceso indicado.
+RNT-066	Solicitud de Homologación de Contratos de Adhesión (Dir. Gral. Calidad SUTEL)
+Implementación del Proceso indicado.
+RNT-067	Solicitud de Inscripción de Convenios privados para el Intercambio de trafico Internacional (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-068	Solicitud de Homologación de convenios relacionados con la ubicación de los equipos, la colocación y el uso compartido de infraestructuras físicas (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-069	Resoluciones relacionadas con la ubicación de los equipos, la colocación y el uso compartido de infraestructuras físicas (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-070	Informes del Fondo Nacional de Telecomunicaciones (FONATEL)
+Implementación del Proceso indicado.
+RNT-071	Acreditación de Laboratorios autorizados para la realización de las mediciones de desempeño y funcionamiento de los equipos terminales (Dir. Gral. Calidad SUTEL)
+Implementación del Proceso indicado.
+RNT-072	Solicitud para la Inscripción de la Lista de Equipos Homologados 
+Implementación del Proceso indicado.
+RNT-073	Inscripción de Normas y los estandares de calidad de los servicios de telecomunicaciones y resultados de  la supervisión y verificación de su cumplimiento (Dir. Gral. Calidad SUTEL)
+Implementación del Proceso indicado.
+RNT-074	Inscripción de Convenios Internacionales de Telecomunicaciones suscritos en Costa Rica (Dir. Gral. Calidad SUTEL)
+Implementación del Proceso indicado.
+RNT-075	Inscripción de Reglamentos Técnicos de Telecomunicaciones emitidos por Aresep (SUTEL-ARESEP)
+Implementación del Proceso indicado.
+RNT-076	Aprobación de Precios y  Tarifas (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-077	Inscripción de sanciones impuestas por resolución firme (Dir. Gral. Mercados SUTEL)
+Implementación del Proceso indicado.
+RNT-078	Solicitud de Otorgamiento de Concesiones Directas de Frecuencias Satelitales (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-079	Solicitud de Otorgamiento de Concesiones Directas de Enlaces de Microondas (MICIT-SUTEL)
+Implementación del Proceso indicado.
+RNT-080	Inscripción en el Registro del RNT
+Implementación del Proceso indicado.
+RNT-081	Certificaciones del Registro del RNT
+Implementación del Proceso indicado.
+RNT-082	Consultas del Registro del RNT
+Implementación del Proceso indicado.
+RNT-083	Modificaciones del Registro del RNT (SUTEL-MICIT)
+Implementación del Proceso indicado.
+RNT-084	Modificación de todos los Procesos y Trámites del Sistema RNT
+RNT-085	API para carga de histórico de asientos del RNT por Lotes:
+Se refiere a la implementación de una interface de “Application Program Interface” que permita mediante una línea de comandos de consola, cargar un fichero en formato MS-Excel que contiene los asientos, a la Base de Datos del “Core Registral” del RNT, realizando para ello las validaciones de los campos y produciendo los mensajes de error o éxito, que permitan depurar los datos que hayan resultado incorrectos y que permitan realizar el proceso de limpieza de los datos digitados en el fichero MS-Excel.
+RNT-086	Máscara de validación para las casillas de la Aplicación Web de carga del histórico de asientos del RNT:
+Los errores del digitador son aquellos errores que comete la persona que digita en el ingreso de los datos, por ejemplo se le fue un cero de mas (digitó 100 en vez de 10), confundió un número con otro (digitó 8 en vrez de 3), o traspuso el orden de las cifras enel número (digitó 57 en vezde 75). El expediente estaba correcto pero el ingreso se hizo de forma errónea.
+El requerimiento entonces consiste en la creación de máscaras de validación para todas las casillas del histórico de expedientes del RNT, de manera que se contemplen validaciones instantáneas que controlen por ejemplo los rangos de valores permitidos, los saltos de un asiento a otro, el tipo de caractér que contempla la casilla.

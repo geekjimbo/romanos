@@ -1,0 +1,82 @@
+RNT-000	Gestor de Admnistración y Seguridad del RNT:
+RNT-001	Motor Gestor de trámites del RNT:
+RNT-002	Componente de Pago en Línea:
+RNT-003	Componente de Firma Digital:
+RNT-004	Interoperabilidad con Sistemas Internos de la SUTEL:
+RNT-005	Interoperabilidad con Sistemas externos a la SUTEL:
+RNT-006	Análisis (parseo) del mensajes del Registro Nacional:
+RNT-007	Portal de Acceso a Regulados
+RNT-008	Generación de Certificaciones del RNT:
+RNT-009	Integración al Gestor Documental (Laserfiche):
+RNT-010	Expediente Digital:
+RNT-011	Gestión de Datos confidenciales:
+RNT-012	Formularios dinámicos e inteligentes:
+RNT-013	Documentos adjuntos:
+RNT-014	Trazabilidad:
+RNT-015	Gestión de Notificaciones:
+RNT-016	Portal público del Sistema RNT:
+RNT-017	Gestión de Datos Abiertos (Open Data):
+RNT-018	Mantenimiento de Catálogos del Sistema RNT:
+RNT-019	Generador de Reportes:
+RNT-020	Gestor de Reglas del Negocio para los Formularios:
+RNT-021	Gestor documental (Drupal) para el MICIT:
+RNT-022	Gestión de Bitácora:
+RNT-023	Amigabilidad de Interfaces de Usuario (UX-Design):
+RNT-024	Gestor de liquidaciones de Pago:
+RNT-025	Acceso al componente de pago de la GACETA (imprenta nacional):
+RNT-026	Se requiere la emisión de un número consecutivo de asiento para el “Core Registral” del RNT. Se emitirá un número de citas o registro. Las modificacioens requieren un sub-asiento, es decir, un número consecutivo relacionado al número principal u original.
+RNT-027	Es requerido que el Sistema RNT pueda practicar anotaciones al margen de los asientos.
+RNT-028	Para el caso de la solicitud de emisión de certificaciones de registros inscritos en el Sistema RNT, se deberán solicitar y emitir digitalmente los mismos con el estampado de firma digital avanzada.
+RNT-029	El “Core Registral” del Sistema RNT debe garantizar la seguridad y autenticidad de la información que publique
+RNT-030	Relaciones entre Asientos del “Core Registral” del RNT. Los asientos exhiben relaciones entre ellos y el Sistema debe evidenciar y visualizar para facilidad de los usuarios, dichas relaciones.
+RNT-031	Generación automatizada de la Lista de Concesionarios.
+RNT-032	Gestor de RNT Móvil:
+RNT-033	Otorgamiento de Concesiones Directas (MICIT-SUTEL)
+RNT-034	Otorgamiento de Concesiones por Concurso Público (MICIT-SUTEL)
+RNT-035	Trámites de Extinción de Concesiones Directas (MICIT-SUTEL)
+RNT-036	Trámites de Adecuación de Concesiones Directas (MICIT-SUTEL)
+RNT-037	Trámites de Adecuación de Concesiones por Concurso Público (MICIT-SUTEL)
+RNT-038	Trámites de reasignación de Concesiones Directas (MICIT-SUTEL)
+RNT-040	Trámites de reasignación de Concesiones por Concurso Público (MICIT-SUTEL)
+RNT-041	Trámites de delimitación de frecuencias de Concesiones Directas (MICIT-SUTEL)
+RNT-042	Trámites de delimitación de frecuencias de Concesiones por Concurso Público (MICIT-SUTEL)
+RNT-043	Trámite de Permisos para Banda Ciudadana (MICIT-SUTEL)
+RNT-044	Trámite de Permisos para Radio Comunicación Privada (MICIT-SUTEL)
+RNT-045	Trámite de Permisos para Uso Oficial (MICIT-SUTEL)
+RNT-046	Trámite de Permisos para Buques y Aeronaves (MICIT-SUTEL)
+RNT-047	Trámite de Permisos para Satelitales (MICIT-SUTEL)
+RNT-048	Trámite de Permisos para Temporales (MICIT-SUTEL)
+RNT-049	Trámite de Permisos para Experimentales (MICIT-SUTEL)
+RNT-050	Trámite de Permisos para Radioaficionados (MICIT-SUTEL)
+RNT-060	Solicitud de Autorizaciones (Dir. Gral. Mercados SUTEL)
+RNT-061	Solicitud de Homologación de Acuerdos de Acceso e Interconexion (Dir. Gral. Mercados SUTEL)
+RNT-062	Solicitud de Homologación de Oferta de Interconexión por Referencia (OIR) (Dir. Gral. Mercados SUTEL)
+RNT-063	Ordenes de Acceso e Interconexión (Dir. Gral. Mercados SUTEL)
+RNT-064	Solicitud de Asignación de Recursos Numeración e inscripción de Registro de Numeración (Dir. Gral. Mercados SUTEL)
+RNT-065	Solicitud de Acreditación Arbitros y Peritos   (Dir. Gral. Calidad SUTEL)
+RNT-066	Solicitud de Homologación de Contratos de Adhesión (Dir. Gral. Calidad SUTEL)
+RNT-067	Solicitud de Inscripción de Convenios privados para el Intercambio de trafico Internacional (Dir. Gral. Mercados SUTEL)
+RNT-068	Solicitud de Homologación de convenios relacionados con la ubicación de los equipos, la colocación y el uso compartido de infraestructuras físicas (Dir. Gral. Mercados SUTEL)
+RNT-069	Resoluciones relacionadas con la ubicación de los equipos, la colocación y el uso compartido de infraestructuras físicas (Dir. Gral. Mercados SUTEL)
+RNT-070	Informes del Fondo Nacional de Telecomunicaciones (FONATEL)
+RNT-071	Acreditación de Laboratorios autorizados para la realización de las mediciones de desempeño y funcionamiento de los equipos terminales (Dir. Gral. Calidad SUTEL)
+RNT-072	Solicitud para la Inscripción de la Lista de Equipos Homologados 
+RNT-073	Inscripción de Normas y los estandares de calidad de los servicios de telecomunicaciones y resultados de  la supervisión y verificación de su cumplimiento (Dir. Gral. Calidad SUTEL)
+RNT-074	Inscripción de Convenios Internacionales de Telecomunicaciones suscritos en Costa Rica (Dir. Gral. Calidad SUTEL)
+RNT-075	Inscripción de Reglamentos Técnicos de Telecomunicaciones emitidos por Aresep (SUTEL-ARESEP)
+RNT-076	Aprobación de Precios y  Tarifas (Dir. Gral. Mercados SUTEL)
+RNT-077	Inscripción de sanciones impuestas por resolución firme (Dir. Gral. Mercados SUTEL)
+RNT-078	Solicitud de Otorgamiento de Concesiones Directas de Frecuencias Satelitales (MICIT-SUTEL)
+RNT-079	Solicitud de Otorgamiento de Concesiones Directas de Enlaces de Microondas (MICIT-SUTEL)
+RNT-080	Inscripción en el Registro del RNT
+RNT-081	Certificaciones del Registro del RNT
+RNT-082	Consultas del Registro del RNT
+RNT-083	Modificaciones del Registro del RNT (SUTEL-MICIT)
+RNT-084	Modificación de todos los Procesos y Trámites del Sistema RNT
+RNT-085	API para carga de histórico de asientos del RNT por Lotes:
+RNT-086	Máscara de validación para las casillas de la Aplicación Web de carga del histórico de asientos del RNT:
+MIG-000	Digitación y Transcripción de ~6,000 expedientes del RNT
+MIG-001	Tratamiento de Errores del Digitador
+MIG-002	Carga de expedientes del RNT por lotes a la Base de Datos Digital
+MIG-003	Tratamiento de Errores de depuración (data cleaning) de los lotes
+MIG-004	Condición de Completitud de la carga del histórico de expedientes del RNT
