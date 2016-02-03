@@ -1,0 +1,3 @@
+Lease estas instrucciones adicionales antes de instalar ....
+atte.
+Ing. Jimmy Figueroa A.
